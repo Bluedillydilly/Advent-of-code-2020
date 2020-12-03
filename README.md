@@ -23,8 +23,9 @@ Same as `Part One` but format is changed. Formatted: ```a-b c: sss...``` where `
 ## Day Three -- File Line Reading and Modular Addition
 https://adventofcode.com/2020/day/3
 ### Part One
-Go through a file of `.`s and `#`s starting at the top left corner. Move rightwards and downwards with a given slope. Count the number of '#'s (trees) encountered. 
+Go through a file of `.`s and `#`s starting at the top left corner. Move rightwards and downwards with a given slope. Imagine that the file 'tiles' infinitely to the right. Count the number of '#'s (trees) encountered to reach the bottom of the file. Answer is count of '#'s.
 ### Part Two
+Same as `Part One` but multiple slopes. Answer is the product of all the slopes.
 
 
 ## Day Four -- 

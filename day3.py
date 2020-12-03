@@ -18,6 +18,5 @@ def checkSlope(slope):
                 temp_tree_count += 1
             line = fn.readline()
     return temp_tree_count
-for slope in slopes:
-    tree_counts.append(checkSlope(slope))
-print("Product total:", math.prod(tree_counts))
+print("Part One:", checkSlope(slopes[1]))
+print("Part Two:", math.prod([checkSlope(slope) for slope in slopes]))

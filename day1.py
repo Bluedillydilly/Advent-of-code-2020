@@ -10,7 +10,7 @@ for index1 in range(len(inputData)):
         if year1 + year2 == 2020:
             print("Years: {}, {}\nMultiplied {}".format(year1, year2, year1*year2))
 # PART TWO
-print("\nPART TWO:")
+print("PART TWO:")
 for index1 in range(len(inputData)):
     year1 = inputData[index1]
     for index2 in range(index1 + 1, len(inputData)):

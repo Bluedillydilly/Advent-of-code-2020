@@ -20,5 +20,6 @@ patternNoCid = birthYear+"|"+issueYear+"|"+height+"|"+hairColor+"|"+eyeColor+"|"
 patternNoCid = "(?:" + patternNoCid + "){7}"
 pattern = patternCid+"|"+patternNoCid
 #pattern = patternCid
+print(pattern)
 matches2 = re.findall(pattern, fn)
 print("PART TWO: valid passports:", len(matches2))

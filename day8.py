@@ -1,4 +1,3 @@
-import re
 INPUT_FILE_NAME = "day8Input.txt"
 accum = 0
 lines = [line for line in open(INPUT_FILE_NAME, 'r')]

@@ -6,10 +6,11 @@ order = volts[:]
 order.sort()
 diff = [order[i+1] - order[i] for i in range(0,len(order)-1)]
 print("PART ONE:", diff.count(1)*diff.count(3))
-def subDivide(bigList, delimiter):
+def subDivide(bigList):
+    """https://stackoverflow.com/questions/15357830/splitting-a-list-based-on-a-delimiter-word"""
     g = []
     for diff in bigList:
-        if diff == delimiter:
+        if diff == 3:
             yield g
             g = []
         g.append(diff)
@@ -23,6 +24,6 @@ def counts(n):
         return 4
     else:
         return counts(n-1) + counts(n-2) + counts(n-3)
-onesLists = list(subDivide(diff, 3))
+onesLists = list(subDivide(diff))
 onesSteps = prod([counts(n) for n in [el.count(1) for el in onesLists] if n>0])
 print("PART TWO:", onesSteps)

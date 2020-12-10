@@ -16,20 +16,16 @@ while True:
         break
     startIndex += 1
 print("PART ONE:", target)
-candidates = []
-startIndex = 0
+candidates, startIndex = [], 0
 currIndex = startIndex
 while True:
     if sum(candidates) == target and len(candidates) != 1:
         break
     if sum(candidates) > target:
         candidates = []
-        startIndex +=1
+        startIndex += 1
         currIndex = startIndex
     candidates.append(lines[currIndex])
     currIndex += 1
-print("PART TWO:", candidates, sum(candidates))
-minCan = min(candidates)
-maxCan = max(candidates)
-print(minCan+maxCan)
-
+minCan, maxCan = min(candidates), max(candidates)
+print("PART TWO:", minCan+maxCan)
